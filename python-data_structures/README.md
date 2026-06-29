@@ -1,0 +1,2 @@
+This directory contains solutions to Python exercises focused on data structures. The projects introduce fundamental Python concepts such as lists, tuples, indexing, slicing, loops, functions, and basic data manipulation techniques.
+The goal of these exercises is to build a strong understanding of Python's built-in data structures and develop problem-solving skills through practical programming tasks.
