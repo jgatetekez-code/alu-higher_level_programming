@@ -11,7 +11,7 @@ def best_score(a_dictionary):
     Returns:
         Key with biggest value or None
     """
-    if len(a_dictionary) == 0:
+    if a_dictionary is None or len(a_dictionary) == 0:
         return None
 
     best_key = None
@@ -27,10 +27,10 @@ def best_score(a_dictionary):
 
 if __name__ == "__main__":
     a_dictionary = {"John": 12, "Alex": 8, "Bob": 14, "Mike": 18}
+    print(best_score(a_dictionary))
 
-    result = best_score(a_dictionary)
-    print(result)
+    # test None
+    print(best_score(None))
 
     # test empty dictionary
-    result = best_score({})
-    print(result)
+    print(best_score({}))
