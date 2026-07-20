@@ -1,10 +1,1 @@
-#!/bin/bash
-# Script to create/fix 0-answer.txt with the correct content
-
-cd python-everything_is_object || exit 1
-echo "type" > 0-answer.txt
-
-echo "Content of 0-answer.txt:"
-cat 0-answer.txt
-echo "Byte count (should be 5):"
-wc -c 0-answer.txt
+type
