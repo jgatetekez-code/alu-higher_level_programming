@@ -1,2 +1,5 @@
--- Lists records with score >= 10 from second_table, ordered by score desc
-SELECT score, name FROM second_table WHERE score >= 10 ORDER BY score DESC;
+-- Lists all shows with their genre IDs, showing NULL for shows without a genre
+SELECT tv_shows.title, tv_show_genres.genre_id
+FROM tv_shows
+LEFT JOIN tv_show_genres ON tv_shows.id = tv_show_genres.show_id
+ORDER BY tv_shows.title ASC, tv_show_genres.genre_id ASC;
