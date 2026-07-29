@@ -1,2 +1,4 @@
--- Counts the number of records in first_table with id = 89
-SELECT COUNT(*) FROM first_table WHERE id = 89;
+-- Lists all cities of California using a subquery
+SELECT id, name FROM cities
+WHERE state_id = (SELECT id FROM states WHERE name = 'California')
+ORDER BY id ASC;
