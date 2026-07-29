@@ -1,0 +1,1 @@
+This Python script fetches data from `https://alu-intranet.hbtn.io/status` using the `urllib` package. It sends an HTTP GET request, reads the response body, and displays the response content, its type, and its UTF-8 decoded string. The script uses a `with` statement to ensure the connection is properly managed.
