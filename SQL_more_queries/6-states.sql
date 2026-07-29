@@ -1,2 +1,7 @@
--- Lists all rows in first_table
-SELECT * FROM first_table;
+-- Creates the database hbtn_0d_usa and table states with primary key
+CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
+USE hbtn_0d_usa;
+CREATE TABLE IF NOT EXISTS states (
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    name VARCHAR(256) NOT NULL
+);
