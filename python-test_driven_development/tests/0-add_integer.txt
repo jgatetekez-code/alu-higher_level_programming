@@ -1,0 +1,57 @@
+The ``add_integer`` function
+============================
+
+Import the function:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+It adds two integers:
+
+    >>> add_integer(1, 2)
+    3
+
+It uses the default value for b:
+
+    >>> add_integer(5)
+    103
+
+It accepts floats and casts them to integers:
+
+    >>> add_integer(3.7, 2)
+    5
+
+    >>> add_integer(3, 2.9)
+    5
+
+    >>> add_integer(3.7, 2.9)
+    5
+
+Negative numbers:
+
+    >>> add_integer(-4, 6)
+    2
+
+    >>> add_integer(-3.5, -2.5)
+    -5
+
+Raises an exception if a is not an integer:
+
+    >>> add_integer("3", 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+Raises an exception if b is not an integer:
+
+    >>> add_integer(3, "2")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+Boolean values (bool is a subclass of int in Python):
+
+    >>> add_integer(True, 2)
+    3
+
+    >>> add_integer(False, False)
+    0
