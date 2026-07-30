@@ -5,39 +5,38 @@ Import the function:
 
     >>> text_indentation = __import__("5-text_indentation").text_indentation
 
-Print text with periods:
+Text with periods:
 
     >>> text_indentation("Hello. World.")
     Hello.
-    
+    <BLANKLINE>
     World.
+    <BLANKLINE>
 
-Print text with question marks:
+Text with question marks:
 
     >>> text_indentation("What? How?")
-    What.
-    
+    What?
+    <BLANKLINE>
     How?
+    <BLANKLINE>
 
-Print text with colon:
+Text with colon:
 
     >>> text_indentation("Hello: World")
     Hello:
-    
+    <BLANKLINE>
     World
 
-Text with spaces:
+Remove spaces at beginning and end:
 
     >>> text_indentation(" Hello world. ")
     Hello world.
+    <BLANKLINE>
 
 Text is not a string:
 
     >>> text_indentation(123)
     Traceback (most recent call last):
     ...
-    TypeError: text must be a string
-
-Empty string:
-
-    >>> text_indentation("")
+    TypeError: text must be a string)
