@@ -1,0 +1,1 @@
+The tests are written using Python's built-in unittest framework and are designed to verify the correctness of all classes, methods, and functionalities implemented in the project. The test suite checks normal behavior, edge cases, invalid inputs, exceptions, file operations, JSON serialization, CSV serialization, and object creation
